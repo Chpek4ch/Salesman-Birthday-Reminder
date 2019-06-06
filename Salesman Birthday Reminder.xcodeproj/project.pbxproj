@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		881BB5B222491B0F000F9DD1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881BB5B122491B0F000F9DD1 /* ProfileViewController.swift */; };
+		881BB5B7224924C0000F9DD1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881BB5B6224924C0000F9DD1 /* Extensions.swift */; };
+		88273A1A2243C6AC00383F61 /* MainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88273A192243C6AC00383F61 /* MainViewCell.swift */; };
+		88273A202243DD4900383F61 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88273A1F2243DD4900383F61 /* Shadow.swift */; };
+		88273A222243E74700383F61 /* MainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88273A212243E74700383F61 /* MainData.swift */; };
+		88273A242243E75700383F61 /* MainDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88273A232243E75700383F61 /* MainDataManager.swift */; };
+		884CB3562243F22F00EA8613 /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884CB3552243F22F00EA8613 /* AlertAction.swift */; };
+		888F1B642243A4BB00B4339F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888F1B632243A4BB00B4339F /* AppDelegate.swift */; };
+		888F1B662243A4BB00B4339F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888F1B652243A4BB00B4339F /* MainViewController.swift */; };
+		888F1B692243A4BB00B4339F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888F1B672243A4BB00B4339F /* Main.storyboard */; };
+		888F1B6B2243A4BD00B4339F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 888F1B6A2243A4BD00B4339F /* Assets.xcassets */; };
+		888F1B6E2243A4BD00B4339F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888F1B6C2243A4BD00B4339F /* LaunchScreen.storyboard */; };
+		88F8774B22452E3A00F028A4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F8774A22452E3900F028A4 /* ImagePicker.swift */; };
+		E3010C64224D17EF00741995 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3010C63224D17EF00741995 /* GoogleService-Info.plist */; };
+		E3245A46225A71E400D95800 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3245A45225A71E400D95800 /* DetailsViewController.swift */; };
+		E38DBAA122639AC8009F6712 /* DispatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38DBAA022639AC8009F6712 /* DispatchManager.swift */; };
+		E3A42C95225B5AA90040619C /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A42C94225B5AA90040619C /* FirebaseManager.swift */; };
+		E3AA4852225797A300B75A35 /* VCUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA4851225797A300B75A35 /* VCUtils.swift */; };
+		E3B3879C22562A7B00628F0B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B3879B22562A7B00628F0B /* LoginViewController.swift */; };
+		E3B3879F22562F0100628F0B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B3879E22562F0100628F0B /* UserData.swift */; };
+		E3B387A122562F7600628F0B /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B387A022562F7600628F0B /* UserDataManager.swift */; };
+		E3BC8D72225BD76200E9E008 /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BC8D71225BD76200E9E008 /* CalendarManager.swift */; };
+		E3BC8D74225BD89300E9E008 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E3BC8D73225BD89300E9E008 /* icon.png */; };
+		E3D61A032254F28B001A1B0D /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D61A022254F28B001A1B0D /* ConnectionManager.swift */; };
+		E3D61A052254F2D0001A1B0D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D61A042254F2D0001A1B0D /* Security.framework */; };
+		E3D61A072254F2DD001A1B0D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D61A062254F2DD001A1B0D /* SystemConfiguration.framework */; };
+		E3D61A092254F2EE001A1B0D /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D61A082254F2EE001A1B0D /* libc++abi.tbd */; };
+		E3D61A0B2254F33F001A1B0D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D61A0A2254F33F001A1B0D /* Reachability.swift */; };
+		E3DB2F95225CC383009FF0DE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DB2F94225CC383009FF0DE /* RegisterViewController.swift */; };
+		E3DB2F98225CD4C7009FF0DE /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DB2F97225CD4C7009FF0DE /* ForgotPassViewController.swift */; };
+		E3DB2F9A225CD9FC009FF0DE /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DB2F99225CD9FC009FF0DE /* UserDefaultManager.swift */; };
+		E9E6C7BE870940B4219EBF07 /* Pods_Salesman_Birthday_Reminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AA5C8E1909EA7BFC652EE3 /* Pods_Salesman_Birthday_Reminder.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B698FD8C63F1A53A42699C6 /* Pods-Salesman Birthday Reminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salesman Birthday Reminder.debug.xcconfig"; path = "Target Support Files/Pods-Salesman Birthday Reminder/Pods-Salesman Birthday Reminder.debug.xcconfig"; sourceTree = "<group>"; };
+		881BB5B122491B0F000F9DD1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		881BB5B6224924C0000F9DD1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		88273A192243C6AC00383F61 /* MainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCell.swift; sourceTree = "<group>"; };
+		88273A1F2243DD4900383F61 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		88273A212243E74700383F61 /* MainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainData.swift; sourceTree = "<group>"; };
+		88273A232243E75700383F61 /* MainDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataManager.swift; sourceTree = "<group>"; };
+		884CB3552243F22F00EA8613 /* AlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAction.swift; sourceTree = "<group>"; };
+		888F1B602243A4BB00B4339F /* Salesman Birthday Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Salesman Birthday Reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		888F1B632243A4BB00B4339F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		888F1B652243A4BB00B4339F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		888F1B682243A4BB00B4339F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		888F1B6A2243A4BD00B4339F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		888F1B6D2243A4BD00B4339F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		888F1B6F2243A4BD00B4339F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88F8774A22452E3900F028A4 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A2AA5C8E1909EA7BFC652EE3 /* Pods_Salesman_Birthday_Reminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Salesman_Birthday_Reminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3010C63224D17EF00741995 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E3245A45225A71E400D95800 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E38DBAA022639AC8009F6712 /* DispatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchManager.swift; sourceTree = "<group>"; };
+		E3A42C94225B5AA90040619C /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		E3AA4851225797A300B75A35 /* VCUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCUtils.swift; sourceTree = "<group>"; };
+		E3B3879B22562A7B00628F0B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E3B3879E22562F0100628F0B /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		E3B387A022562F7600628F0B /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		E3B387A22256331700628F0B /* Salesman Birthday Reminder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Salesman Birthday Reminder.entitlements"; sourceTree = "<group>"; };
+		E3BC8D71225BD76200E9E008 /* CalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
+		E3BC8D73225BD89300E9E008 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		E3D61A022254F28B001A1B0D /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		E3D61A042254F2D0001A1B0D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E3D61A062254F2DD001A1B0D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E3D61A082254F2EE001A1B0D /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		E3D61A0A2254F33F001A1B0D /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		E3DB2F94225CC383009FF0DE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E3DB2F97225CD4C7009FF0DE /* ForgotPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
+		E3DB2F99225CD9FC009FF0DE /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		EA9A0CDDAF45E2593B519CA1 /* Pods-Salesman Birthday Reminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salesman Birthday Reminder.release.xcconfig"; path = "Target Support Files/Pods-Salesman Birthday Reminder/Pods-Salesman Birthday Reminder.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		888F1B5D2243A4BB00B4339F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D61A092254F2EE001A1B0D /* libc++abi.tbd in Frameworks */,
+				E3D61A072254F2DD001A1B0D /* SystemConfiguration.framework in Frameworks */,
+				E3D61A052254F2D0001A1B0D /* Security.framework in Frameworks */,
+				E9E6C7BE870940B4219EBF07 /* Pods_Salesman_Birthday_Reminder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		881BB5B322491B13000F9DD1 /* Profile Scene */ = {
+			isa = PBXGroup;
+			children = (
+				881BB5B122491B0F000F9DD1 /* ProfileViewController.swift */,
+			);
+			path = "Profile Scene";
+			sourceTree = "<group>";
+		};
+		88273A1B2243CB3700383F61 /* Main Scene */ = {
+			isa = PBXGroup;
+			children = (
+				888F1B652243A4BB00B4339F /* MainViewController.swift */,
+				88273A192243C6AC00383F61 /* MainViewCell.swift */,
+			);
+			path = "Main Scene";
+			sourceTree = "<group>";
+		};
+		88273A252243E9FC00383F61 /* Data layer */ = {
+			isa = PBXGroup;
+			children = (
+				88273A212243E74700383F61 /* MainData.swift */,
+				88273A232243E75700383F61 /* MainDataManager.swift */,
+				E3B3879E22562F0100628F0B /* UserData.swift */,
+				E3B387A022562F7600628F0B /* UserDataManager.swift */,
+			);
+			path = "Data layer";
+			sourceTree = "<group>";
+		};
+		8832A949E808368C2206A743 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B698FD8C63F1A53A42699C6 /* Pods-Salesman Birthday Reminder.debug.xcconfig */,
+				EA9A0CDDAF45E2593B519CA1 /* Pods-Salesman Birthday Reminder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		888F1B572243A4BB00B4339F = {
+			isa = PBXGroup;
+			children = (
+				888F1B622243A4BB00B4339F /* Salesman Birthday Reminder */,
+				888F1B612243A4BB00B4339F /* Products */,
+				A9AF07CCA893D15052007BEA /* Frameworks */,
+				8832A949E808368C2206A743 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		888F1B612243A4BB00B4339F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				888F1B602243A4BB00B4339F /* Salesman Birthday Reminder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		888F1B622243A4BB00B4339F /* Salesman Birthday Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				E3B387A22256331700628F0B /* Salesman Birthday Reminder.entitlements */,
+				888F1B632243A4BB00B4339F /* AppDelegate.swift */,
+				E3DB2F96225CD259009FF0DE /* Forgot Pass Scene */,
+				E3DB2F93225CC36B009FF0DE /* Register Scene */,
+				E3B3879D22562AFF00628F0B /* Login Scene */,
+				88273A1B2243CB3700383F61 /* Main Scene */,
+				E3245A47225A721100D95800 /* Details Scene */,
+				881BB5B322491B13000F9DD1 /* Profile Scene */,
+				884CB3552243F22F00EA8613 /* AlertAction.swift */,
+				888F1B672243A4BB00B4339F /* Main.storyboard */,
+				E3BC8D73225BD89300E9E008 /* icon.png */,
+				88F8774A22452E3900F028A4 /* ImagePicker.swift */,
+				888F1B6A2243A4BD00B4339F /* Assets.xcassets */,
+				E3D61A022254F28B001A1B0D /* ConnectionManager.swift */,
+				E3DB2F99225CD9FC009FF0DE /* UserDefaultManager.swift */,
+				E3AA4851225797A300B75A35 /* VCUtils.swift */,
+				881BB5B6224924C0000F9DD1 /* Extensions.swift */,
+				E3D61A0A2254F33F001A1B0D /* Reachability.swift */,
+				E3BC8D71225BD76200E9E008 /* CalendarManager.swift */,
+				E38DBAA022639AC8009F6712 /* DispatchManager.swift */,
+				88273A1F2243DD4900383F61 /* Shadow.swift */,
+				E3A42C94225B5AA90040619C /* FirebaseManager.swift */,
+				888F1B6C2243A4BD00B4339F /* LaunchScreen.storyboard */,
+				888F1B6F2243A4BD00B4339F /* Info.plist */,
+				E3010C63224D17EF00741995 /* GoogleService-Info.plist */,
+				88273A252243E9FC00383F61 /* Data layer */,
+			);
+			path = "Salesman Birthday Reminder";
+			sourceTree = "<group>";
+		};
+		A9AF07CCA893D15052007BEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3D61A082254F2EE001A1B0D /* libc++abi.tbd */,
+				E3D61A062254F2DD001A1B0D /* SystemConfiguration.framework */,
+				E3D61A042254F2D0001A1B0D /* Security.framework */,
+				A2AA5C8E1909EA7BFC652EE3 /* Pods_Salesman_Birthday_Reminder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3245A47225A721100D95800 /* Details Scene */ = {
+			isa = PBXGroup;
+			children = (
+				E3245A45225A71E400D95800 /* DetailsViewController.swift */,
+			);
+			name = "Details Scene";
+			sourceTree = "<group>";
+		};
+		E3B3879D22562AFF00628F0B /* Login Scene */ = {
+			isa = PBXGroup;
+			children = (
+				E3B3879B22562A7B00628F0B /* LoginViewController.swift */,
+			);
+			path = "Login Scene";
+			sourceTree = "<group>";
+		};
+		E3DB2F93225CC36B009FF0DE /* Register Scene */ = {
+			isa = PBXGroup;
+			children = (
+				E3DB2F94225CC383009FF0DE /* RegisterViewController.swift */,
+			);
+			path = "Register Scene";
+			sourceTree = "<group>";
+		};
+		E3DB2F96225CD259009FF0DE /* Forgot Pass Scene */ = {
+			isa = PBXGroup;
+			children = (
+				E3DB2F97225CD4C7009FF0DE /* ForgotPassViewController.swift */,
+			);
+			path = "Forgot Pass Scene";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		888F1B5F2243A4BB00B4339F /* Salesman Birthday Reminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 888F1B722243A4BD00B4339F /* Build configuration list for PBXNativeTarget "Salesman Birthday Reminder" */;
+			buildPhases = (
+				CD4F5A82BD72FB9DAB205AD9 /* [CP] Check Pods Manifest.lock */,
+				888F1B5C2243A4BB00B4339F /* Sources */,
+				888F1B5D2243A4BB00B4339F /* Frameworks */,
+				888F1B5E2243A4BB00B4339F /* Resources */,
+				4114DF0FA7706A7BCB2D2D72 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Salesman Birthday Reminder";
+			productName = "Salesman Birthday Reminder";
+			productReference = 888F1B602243A4BB00B4339F /* Salesman Birthday Reminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		888F1B582243A4BB00B4339F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "karpenko vlad";
+				TargetAttributes = {
+					888F1B5F2243A4BB00B4339F = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 888F1B5B2243A4BB00B4339F /* Build configuration list for PBXProject "Salesman Birthday Reminder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 888F1B572243A4BB00B4339F;
+			productRefGroup = 888F1B612243A4BB00B4339F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				888F1B5F2243A4BB00B4339F /* Salesman Birthday Reminder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		888F1B5E2243A4BB00B4339F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888F1B6E2243A4BD00B4339F /* LaunchScreen.storyboard in Resources */,
+				E3BC8D74225BD89300E9E008 /* icon.png in Resources */,
+				888F1B6B2243A4BD00B4339F /* Assets.xcassets in Resources */,
+				E3010C64224D17EF00741995 /* GoogleService-Info.plist in Resources */,
+				888F1B692243A4BB00B4339F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4114DF0FA7706A7BCB2D2D72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Salesman Birthday Reminder/Pods-Salesman Birthday Reminder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageTextField/ImageTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Salesman Birthday Reminder/Pods-Salesman Birthday Reminder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD4F5A82BD72FB9DAB205AD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Salesman Birthday Reminder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		888F1B5C2243A4BB00B4339F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D61A0B2254F33F001A1B0D /* Reachability.swift in Sources */,
+				88273A1A2243C6AC00383F61 /* MainViewCell.swift in Sources */,
+				E3DB2F9A225CD9FC009FF0DE /* UserDefaultManager.swift in Sources */,
+				E3B3879F22562F0100628F0B /* UserData.swift in Sources */,
+				E3BC8D72225BD76200E9E008 /* CalendarManager.swift in Sources */,
+				888F1B662243A4BB00B4339F /* MainViewController.swift in Sources */,
+				E3B3879C22562A7B00628F0B /* LoginViewController.swift in Sources */,
+				E3D61A032254F28B001A1B0D /* ConnectionManager.swift in Sources */,
+				E3AA4852225797A300B75A35 /* VCUtils.swift in Sources */,
+				881BB5B222491B0F000F9DD1 /* ProfileViewController.swift in Sources */,
+				E3DB2F95225CC383009FF0DE /* RegisterViewController.swift in Sources */,
+				884CB3562243F22F00EA8613 /* AlertAction.swift in Sources */,
+				88F8774B22452E3A00F028A4 /* ImagePicker.swift in Sources */,
+				88273A202243DD4900383F61 /* Shadow.swift in Sources */,
+				881BB5B7224924C0000F9DD1 /* Extensions.swift in Sources */,
+				E3A42C95225B5AA90040619C /* FirebaseManager.swift in Sources */,
+				888F1B642243A4BB00B4339F /* AppDelegate.swift in Sources */,
+				E3245A46225A71E400D95800 /* DetailsViewController.swift in Sources */,
+				88273A222243E74700383F61 /* MainData.swift in Sources */,
+				88273A242243E75700383F61 /* MainDataManager.swift in Sources */,
+				E3DB2F98225CD4C7009FF0DE /* ForgotPassViewController.swift in Sources */,
+				E3B387A122562F7600628F0B /* UserDataManager.swift in Sources */,
+				E38DBAA122639AC8009F6712 /* DispatchManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		888F1B672243A4BB00B4339F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				888F1B682243A4BB00B4339F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		888F1B6C2243A4BD00B4339F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				888F1B6D2243A4BD00B4339F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		888F1B702243A4BD00B4339F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		888F1B712243A4BD00B4339F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		888F1B732243A4BD00B4339F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B698FD8C63F1A53A42699C6 /* Pods-Salesman Birthday Reminder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Salesman Birthday Reminder/Salesman Birthday Reminder.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = H4G4R7SXDA;
+				INFOPLIST_FILE = "Salesman Birthday Reminder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yellowgears.birthdayremindersalesman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = SalesmanBirthdayCalendarProfile;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		888F1B742243A4BD00B4339F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA9A0CDDAF45E2593B519CA1 /* Pods-Salesman Birthday Reminder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Salesman Birthday Reminder/Salesman Birthday Reminder.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = H4G4R7SXDA;
+				INFOPLIST_FILE = "Salesman Birthday Reminder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yellowgears.birthdayremindersalesman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = SalesmanBirthdayCalendarProfile;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		888F1B5B2243A4BB00B4339F /* Build configuration list for PBXProject "Salesman Birthday Reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				888F1B702243A4BD00B4339F /* Debug */,
+				888F1B712243A4BD00B4339F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		888F1B722243A4BD00B4339F /* Build configuration list for PBXNativeTarget "Salesman Birthday Reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				888F1B732243A4BD00B4339F /* Debug */,
+				888F1B742243A4BD00B4339F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 888F1B582243A4BB00B4339F /* Project object */;
+}
